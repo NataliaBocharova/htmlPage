@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мой первый сайт</title>
+</head>
+<body>
+<h1>Анкета</h1>
+    <form action="handler.php" method="post">
+        <label>
+            Ваше имя <input type="text" name="clientName"/>
+        </label>
+        <div><b>Была ли для Вас полезна информация на странице?</b></div>
+        <input checked="checked" type="radio" value="1" name="myRadio">Да
+        <input type="radio" value="2" name="myRadio">Нет
+        <p><select size="11" multiple name="city[]">
+            <option disabled>В каких городах Вы успели побывать?</option>
+            <option value="Saint-Petersburg">Санкт-Петербург</option>
+            <option selected value="Moscow">Москва</option>
+            <option value="Novosibirsk">Новосибирск</option>
+            <option value="Yekaterinburg">Екатеринбург</option>
+            <option value="Volgograd">Волгоград</option>
+            <option value="Irkutsk">Иркутск</option>
+            <option value="Kazan">Казань</option>
+            <option value="Vladimir">Владимир</option>
+            <option value="Krasnoyarsk">Красноярск</option>
+            <option value="Rostov">Ростов-на-Дону</option>
+            <option value="noOne">Ни в одном</option>
+        </select></p>
+        <p><select size="11" name="clientCity[]">
+            <option disabled>Из какого Вы города?</option>
+            <option value="Saint-Petersburg">Санкт-Петербург</option>
+            <option selected value="Moscow">Москва</option>
+            <option value="Novosibirsk">Новосибирск</option>
+            <option value="Yekaterinburg">Екатеринбург</option>
+            <option value="Volgograd">Волгоград</option>
+            <option value="Irkutsk">Иркутск</option>
+            <option value="Kazan">Казань</option>
+            <option value="Vladimir">Владимир</option>
+            <option value="Krasnoyarsk">Красноярск</option>
+            <option value="Rostov">Ростов-на-Дону</option>
+            <option value="noOne">Другой</option>
+        </select></p>
+        <p><b>Какую информацию, на Ваш взгляд, необходимо также добавить на страницу?:</b></p>
+        <p><textarea rows="10" cols="45" name="information"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+</body>
+</html>
