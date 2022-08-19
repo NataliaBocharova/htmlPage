@@ -1,0 +1,12 @@
+p {
+color: blue;
+font-size: 16px;
+}
+#header {
+font-weight:bold;
+color: red;
+}
+.whatToSee {
+font-weight:bold;
+color: green;
+}
