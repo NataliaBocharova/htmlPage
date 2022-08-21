@@ -10,11 +10,15 @@
         <label>
             Ваше имя <input type="text" name="clientName"/>
         </label>
-        <div><b>Была ли для Вас полезна информация на странице?</b></div>
-        <input checked="checked" type="radio" value="1" name="myRadio">Да
-        <input type="radio" value="2" name="myRadio">Нет
+        <p><b>Была ли для Вас полезна информация на странице?</b></p>
+        <label>
+            Да <input checked="checked" type="radio" value="1" name="myRadio">
+        </label>
+        <label>
+            Нет <input type="radio" value="2" name="myRadio">
+        </label>
+        <p><b>В каких городах Вы успели побывать?</b></p>
         <p><select size="11" multiple name="city[]">
-            <option disabled>В каких городах Вы успели побывать?</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
             <option selected value="Moscow">Москва</option>
             <option value="Novosibirsk">Новосибирск</option>
@@ -26,11 +30,13 @@
             <option value="Krasnoyarsk">Красноярск</option>
             <option value="Rostov">Ростов-на-Дону</option>
             <option value="noOne">Ни в одном</option>
-        </select></p>
-        <p><select size="11" name="clientCity[]">
-            <option disabled>Из какого Вы города?</option>
+        </select>
+        </p>
+        <p><b>Из какого Вы города?</b></p>
+        <select name="clientCity">
+            <option disabled value=" ">Из какого Вы города?</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
-            <option selected value="Moscow">Москва</option>
+            <option value="Moscow">Москва</option>
             <option value="Novosibirsk">Новосибирск</option>
             <option value="Yekaterinburg">Екатеринбург</option>
             <option value="Volgograd">Волгоград</option>
@@ -40,8 +46,48 @@
             <option value="Krasnoyarsk">Красноярск</option>
             <option value="Rostov">Ростов-на-Дону</option>
             <option value="noOne">Другой</option>
-        </select></p>
-        <p><b>Какую информацию, на Ваш взгляд, необходимо также добавить на страницу?:</b></p>
+        </select>
+        <p><b>Какие из нижеперечисленных городов Вы планируете посетить?</b></p>
+        <label>
+             <input type="checkbox" value="1" name="myCheck"> Санкт-Петербург
+        </label>
+        <br>
+        <label>
+             <input type="checkbox" value="2" name="myCheck"> Москва
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="3" name="myCheck"> Новосибирск
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="4" name="myCheck"> Екатеринбург
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="5" name="myCheck"> Волгоград
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="6" name="myCheck"> Иркутск
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="7" name="myCheck"> Казань
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="8" name="myCheck"> Владимир
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="9" name="myCheck"> Красноярск
+        </label>
+        </br>
+        <label>
+             <input type="checkbox" value="10" name="myCheck"> Ростов-на-Дону
+        </label>
+        <p><b>Оставьте, пожалуйста, Ваш отзыв:</b></p>
         <p><textarea rows="10" cols="45" name="information"></textarea></p>
         <p><input type="submit" value="Отправить"></p>
     </form>
